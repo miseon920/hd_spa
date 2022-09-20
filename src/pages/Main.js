@@ -54,11 +54,15 @@ const Main = () => {
         </Swiper>
       </div>
       <ul className="dots">
-        {SLIDE.map((dot, idx) => {
-          <li className={`${num === idx ? "on" : ""}`} key={dot.id}>
+        {SLIDE.map((dot, idx) => (
+          <li
+            className={`${num === idx ? "on" : ""}`}
+            key={dot.id}
+            onClick={() => MSG.current.swiper.slideTo(idx + 1)}
+          >
             {dot.id}
-          </li>;
-        })}
+          </li>
+        ))}
       </ul>
       <div className="tab">{SLIDE[num]?.title}</div>
       <div className="slideNum">

@@ -23,4 +23,16 @@
         center/cover;
     }
   }
+  .dots li {
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    background: #000;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px;
+    &.on {
+      background: green;
+    }
+  }
 }
