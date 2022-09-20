@@ -1,0 +1,13 @@
+.App {
+  color: blueviolet;
+  strong {
+    font-size: 100px;
+  }
+
+  &:hover {
+    color: orangered;
+  }
+  &.on {
+    color: palevioletred;
+  }
+}
